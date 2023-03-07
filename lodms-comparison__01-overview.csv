@@ -1,0 +1,72 @@
+#,Main Category,Sub Category,ConedaKOR,LinkedDataHub,Metaphacts Community,Omeka S,ResearchSpace,Vitro,Wikibase,WissKI,,,,,,,,,,,,,,,
+1,Official website,,https://github.com/coneda/kor,https://atomgraph.github.io/LinkedDataHub/,https://bitbucket.org/metaphacts/metaphacts-community,https://omeka.org/s/,https://github.com/researchspace/researchspace,https://vivo.lyrasis.org/vitro/,https://wikiba.se/,http://wiss-ki.eu,,,,,,,,,,,,,,,
+2,Licence,,AGPL 3.0,https://www.apache.org/licenses/LICENSE-2.0,LGPL 2.1 + Commons Clause,GPLv3,AGPL 3.0,BSD-3-Clause License,BSD 3-Clause,"GNU General Public License, Version 2",,,,,,,,,,,,,,,
+3,Source code availability,,Available,Available,Available,Available,Available,Available,Available,Available,,,,,,,,,,,,,,,
+4,Community maturity,,Mature,Emerging,Fledgling,Mature,Emerging,Fledgling,Mature,Mature,,,,,,,,,,,,,,,
+5,Statistics (time stamp it),,"2022-07-11: 2516 commits, 23 stars, 7 forks","4300+ commits. 327 stars, 75 forks (July 2022)",,"2022-08-31: 6267 commits, 297 stars, 100 forks","96 Stars, 464 commits since refactoring (2020)","~7000 Commits, 79 stars, 82 forks (May 2022)","GitHub stats as of 2022-05-03: 35,634 commits, 108 stars and 53 forks.","80 public sites, >2300 Commits, 18 Stars (02.03.2023)",,,,,,,,,,,,,,,
+6,Payment models,,Free,Free,Free,Free,Free,Free,Free,Hybrid model,,,,,,,,,,,,,,,
+7,Maintainer,,"IEG Mainz, DFK Paris, Wendig OÜ",AtomGraph,Metaphacts,Omeka,ResearchSpace / Kartography ,Vivo Community,WMDE,Germanischen Nationalmuseum Nürnberg (GNM),,,,,,,,,,,,,,,
+8,Documentation,,Sufficient,Sufficient,Sufficient,Sufficient,Sufficient,Little or outdated,Sufficient,Sufficient,,,,,,,,,,,,,,,
+9,Infrastructure stack,Framework,ruby on rails + riotjs,Jersey + Jena + Saxon-HE + Saxon-JS  (Java),Java + React,PHP 7.4+,Java + React,Java + JS,MediaWiki (PHP + Vue.js + Typescript),Drupal/ PHP 8,,,,,,,,,,,,,,,
+,,Webserver,"any RACK-compatible server, also built-in",Apache Tomcat 9.x,Jetty,Apache,Jetty,Tomcat,Apache/Nginx,Apache 2/ NGINX,,,,,,,,,,,,,,,
+,,Database,MariaDB/MySQL,,,MariaDB/MySQL,,MariaDB / MySQL,MariaDB/MySQL,MariaDB/ MySQL/ PostgresSQL,,,,,,,,,,,,,,,
+,,Triplestore,"MariaDB/MySQL, Neo4j (optional)",Jena Fuseki 2 (or any SPARQL 1.1 compatible),Blazegraph (or any SPARQL 1.1 compatible),,Blazegraph (or any SPARQL 1.1 compatible),Apache Jena,Blazegraph,"GraphDB free, Blazegraph, RDF4J",,,,,,,,,,,,,,,
+,,Search,ElasticSearch,SPARQL regex(),Solr (through Blazegraph),Solr adapter,Solr (through Blazegraph),Solr,ElasticSearch,Solr,,,,,,,,,,,,,,,
+,,Image server,,,,Image Server,Cantaloupe / DigiLib,,,IIPImage with Mirador3,,,,,,,,,,,,,,,
+,,3D Viewer,,,,Image Server,,,,"Sketchfab embed, Kompakkt Embed",,,,,,,,,,,,,,,
+,,Containerization,Docker / Docker-Compose,Docker-compose,Docker / Docker-Compose,Docker,Docker / Docker-Compose,,Docker,Docker/ Docker-Compose,,,,,,,,,,,,,,,
+,,Other (please add),,AWS CloudFormation,,,,,,,,,,,,,,,,,,,,,
+10,APIs,RESTful,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+,,SPARQL,FALSE,TRUE,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+,,MediaWiki HTTP,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+,,GraphQL,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+,,SQL,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+,,Other (please add),OAI-PMH,SPARQL 1.1 Graph Store Protocol,SPARQL 1.1 Graph Store Protocol,,,multiple (see long answer),,,,,,,,,,,,,,,,,
+11,API usability level,,Well documented,Well documented,Little or self documentation,Well documented,Little or self documentation,Well documented,Well documented,Little or self documentation,,,,,,,,,,,,,,,
+12,SPARQL Endpoint usability level,,,"Availability of graphical user interfaces, examples and documentation","Availability of graphical user interfaces, examples and documentation",,"Availability of graphical user interfaces, examples and documentation","Availability of graphical user interfaces, examples and documentation","Availability of graphical user interfaces, examples and documentation",Depends on third party triple store,,,,,,,,,,,,,,,
+13,Reification,,Yes,No,No,,,Yes,Yes,Yes,,,,,,,,,,,,,,,
+14,Reasoning operations via the triplestore endpoint,,,Yes,,,,Yes,No,Yes,,,,,,,,,,,,,,,
+15,Method for ontology definition,,Hybrid ,Hybrid ,Through import,Through import,Through import,Hybrid ,Within the RDMS,Through import,,,,,,,,,,,,,,,
+16,Ontology constraints,,None,Based on semantically defined rules,None,None,None,Based on semantically defined rules,None,Based on semantically defined rules,,,,,,,,,,,,,,,
+17,Data validation,Ontology level,TRUE,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+,,Data type field level,TRUE,TRUE,TRUE,FALSE,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+18,Standardization and interoperability for data mapping / harvesting,,,"Yes, out of the box",No,"Yes, via plugins or third-party tools",,"Yes, via plugins or third-party tools","Yes, via plugins or third-party tools","Yes, out of the box",,,,,,,,,,,,,,,
+19,PID generation,,Yes,Yes,No,Yes,,Yes,Yes,Yes,,,,,,,,,,,,,,,
+20,PID reuse,,No,Yes,No,,,,No,No,,,,,,,,,,,,,,,
+21,Import / export function,,"Yes, out of the box","Yes, out of the box","Yes, out of the box","Yes, via plugins or third-party tools","Yes, out of the box","Yes, out of the box","Yes, out of the box","Yes, out of the box",,,,,,,,,,,,,,,
+22,Data type input support,Text,TRUE,TRUE,TRUE,TRUE,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+,,Numeric,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+,,Boolean,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+,,Date and time,TRUE,TRUE,TRUE,TRUE,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+,,IRI/URI/URL,TRUE,TRUE,TRUE,TRUE,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+,,Identifiers,TRUE,TRUE,TRUE,TRUE,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+,,Media files,TRUE,TRUE,FALSE,TRUE,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+,,Geospatial,FALSE,FALSE,TRUE,TRUE,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+,,Other (please add),ISBN,,,,,,,Markdown,,,,,,,,,,,,,,,
+23,Multiple value entries per field,Allowed,FALSE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+,,Changable order,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+,,Mixed data types,FALSE,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+24,Content templating,Data entry,TRUE,TRUE,TRUE,TRUE,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+,,Data presentation,TRUE,TRUE,TRUE,TRUE,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+,,Customisable per entity type,TRUE,TRUE,TRUE,TRUE,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+,,Via user interface,TRUE,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+,,Requires additional configuration or coding,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+25,Front-end design,,Fixed themes,Fully customizable themes,Fully customizable themes,Fully customizable themes,Fully customizable themes,Fixed themes,Fixed themes,Fully customizable themes,,,,,,,,,,,,,,,
+26,Translatable/ multilingual Interface ,Interface,FALSE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+,,Data model,FALSE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+,,Data values,FALSE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+27,Version control,Entity level,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+,,Ontology level,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+28,User access control on the entity/fact level,,,Bi-directional,No,One-directional,,,One-directional,Bi-directional,,,,,,,,,,,,,,,
+29,Access rights settings,,Full granularity of access,Full granularity of access,Limited number of access tiers,Full granularity of access,Full granularity of access,Limited number of access tiers,Limited number of access tiers,Full granularity of access,,,,,,,,,,,,,,,
+30,Media integrations,Audio,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+,,Image,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+,,Video,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+,,3D,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+,,Remote,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+,,Maps,TRUE,TRUE,TRUE,TRUE,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+,,Other (please add),,,,,,,,"Code Highlighting, Mathematics/ Functions",,,,,,,,,,,,,,,
+31,Data visualization,,None,Build-in,Build-in,Via extensions,Build-in,,Build-in,Via extensions,,,,,,,,,,,,,,,
+32,Data analysis,,None,Via extensions,Built-in,Via extensions,Built-in,,Via extensions,Via extensions,,,,,,,,,,,,,,,
+33,Third-party tools and libraries,,Mature,Few or outdated,Few or outdated,Mature,,Few or outdated,Mature,Mature,,,,,,,,,,,,,,,
+34,Scalability,,Yes,Yes,Yes,Yes,Yes,,Yes,Yes,,,,,,,,,,,,,,,
